@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro'; import PlanTable from '../components/PlanTable.astro';
+import { plans, providers, verified, notVerified } from '../lib/data.js';
+---
+<Base title="AI subscription plans compared">
+<h1>AI plan prices &amp; limits, verified daily</h1>
+<p class="mut">ChatGPT/Codex, Claude, Gemini, Cursor and GitHub Copilot. Only officially published figures. Last full verification: <b>{verified}</b>.</p>
+<p>{providers.map(p=><a href={`/provider/${p.slug}/`} style="margin-right:12px">{p.name}</a>)}</p>
+<PlanTable rows={plans}/>
+<div class="card"><b>Not yet verified:</b> <ul>{notVerified.map(n=><li>{n}</li>)}</ul></div>
+</Base>

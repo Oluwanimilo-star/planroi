@@ -1,0 +1,7 @@
+---
+import Base from '../../layouts/Base.astro'; import PlanTable from '../../components/PlanTable.astro';
+import { providers } from '../../lib/data.js';
+export const getStaticPaths = () => providers.map(p=>({params:{p:p.slug},props:{pr:p}}));
+const { pr } = Astro.props;
+---
+<Base title={`${pr.name} plans`}><h1>{pr.name} plans</h1><PlanTable rows={pr.plans}/></Base>

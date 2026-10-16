@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro'; import Src from '../../components/Src.astro';
+import { plans, price, verified } from '../../lib/data.js';
+import ch from '../../data/changes.json';
+export const getStaticPaths = () => plans.map(p=>({params:{s:p.slug},props:{p}}));
+const { p } = Astro.props;
+const hist = ch.changes.filter(c=>c.plan===p.plan||c.provider==='All');
+---
+<Base title={`${p.provider} ${p.plan}`}>
+<p><a href={`/provider/${p.pslug}/`}>{p.provider}</a></p><h1>{p.plan}</h1>
+<div class="card"><h3>Price</h3><p style="font-size:1.4rem;margin:0">{price(p)}</p><Src href={p.price_source||p.source} date={verified}/></div>
+<div class="card"><h3>Stated limits</h3><p>{p.limits}</p><Src href={p.source} date={verified}/></div>
+<div class="card"><h3>Change history</h3><ul>{hist.map(c=><li><time>{c.date}</time>: {c.summary}</li>)}</ul></div>
+</Base>

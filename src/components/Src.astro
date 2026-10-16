@@ -1,0 +1,4 @@
+---
+const { href, date } = Astro.props;
+---
+<span class="src"><a href={href} rel="nofollow noopener" target="_blank">source</a> · checked <time datetime={date}>{date}</time></span>

@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro'; import ch from '../data/changes.json';
+---
+<Base title="Change log"><h1>Change log</h1><p><a href="/changes/rss.xml">RSS feed</a></p>
+<div class="tw"><table><thead><tr><th>Date</th><th>Plan</th><th>Change</th><th>Before → After</th></tr></thead><tbody>
+{ch.changes.map(c=><tr><td class="nw">{c.date}</td><td>{c.provider} · {c.plan}</td><td>{c.summary} <a href={c.source}>source</a></td><td>{c.before??'—'} → {c.after}</td></tr>)}
+</tbody></table></div></Base>

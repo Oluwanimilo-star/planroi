@@ -1,0 +1,5 @@
+.astro
+change-report.md
+dist
+node_modules
+.github/workflows/

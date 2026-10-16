@@ -1,0 +1,12 @@
+---
+import Src from './Src.astro';
+import { price, verified } from '../lib/data.js';
+const { rows } = Astro.props;
+---
+<div class="tw"><table>
+<thead><tr><th>Plan</th><th>Price</th><th>Stated limits</th><th>Source</th></tr></thead>
+<tbody>{rows.map(p=>(<tr>
+<td><a href={`/plan/${p.slug}/`}><b>{p.plan}</b></a><br><small><a href={`/provider/${p.pslug}/`}>{p.provider}</a></small></td>
+<td class="nw">{price(p)}{p.price_source && <><br><Src href={p.price_source} date={verified}/></>}</td>
+<td>{p.limits}</td>
+<td><Src href={p.source} date={verified}/></td></tr>))}</tbody></table></div>

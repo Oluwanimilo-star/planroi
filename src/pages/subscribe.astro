@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Subscribe"><h1>Get change alerts</h1><p>Email alerts when any tracked price or limit changes. (Coming soon: no email provider is connected yet; this form does not send anything.)</p>
+<form class="card" onsubmit="event.preventDefault();this.querySelector('p').hidden=false"><label>Email <input type="email" required placeholder="you@example.com"></label> <button>Subscribe</button>
+<p hidden class="mut">Thanks! Signups aren't live yet. Use the <a href="/changes/rss.xml">RSS feed</a> meanwhile.</p></form></Base>

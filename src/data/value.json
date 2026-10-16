@@ -1,0 +1,8 @@
+{"note":"Derived only from numbers published on the official pages in plans.json. Unit definitions differ per provider; do not compare across providers.",
+"metrics":[
+{"provider":"GitHub","unit":"USD of AI Credits","plans":[{"plan":"Copilot Pro","price":10,"units":15},{"plan":"Copilot Pro+","price":39,"units":70},{"plan":"Copilot Max","price":100,"units":200},{"plan":"Copilot Free","price":0,"units":null}]},
+{"provider":"Cursor","unit":"x Plus usage","plans":[{"plan":"Plus","price":8,"units":1},{"plan":"Premium","price":30,"units":4},{"plan":"Super","price":100,"units":15},{"plan":"Ultra","price":200,"units":50}]},
+{"provider":"Anthropic","unit":"x Pro usage per 5h session","plans":[{"plan":"Claude Pro","price":20,"units":1},{"plan":"Claude Max 5x","price":100,"units":5},{"plan":"Claude Max 20x","price":200,"units":20}]},
+{"provider":"OpenAI","unit":"Codex local msgs / 5h, GPT-6 Luna (range)","plans":[{"plan":"ChatGPT Plus (incl. Codex)","price":20,"units":[350,3000]},{"plan":"ChatGPT Pro (3 tiers)","price":null,"units":null}]},
+{"provider":"Google","unit":"x Free usage","plans":[{"plan":"Google AI Plus","price":null,"units":2},{"plan":"Google AI Pro","price":null,"units":4}]}
+]}

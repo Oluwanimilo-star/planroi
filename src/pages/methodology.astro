@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro'; import { plans, verified, notVerified } from '../lib/data.js';
+const srcs=[...new Set(plans.flatMap(p=>[p.source,p.price_source].filter(Boolean)))];
+---
+<Base title="Methodology"><h1>Methodology</h1>
+<p>Every figure is copied from the provider's official pricing page. If a page doesn't state a number, we show "not published" and never estimate. A daily job fetches each source, extracts the pricing/limits text, and diffs it against the last snapshot; a human reviews each diff before the site updates.</p>
+<h2>Sources</h2><div class="tw"><table><thead><tr><th>URL</th><th>Last verified</th></tr></thead><tbody>{srcs.map(s=><tr><td><a href={s}>{s}</a></td><td>{verified}</td></tr>)}</tbody></table></div>
+<h2>Known gaps</h2><ul>{notVerified.map(n=><li>{n}</li>)}</ul>
+<p class="mut">Value-per-dollar figures use each provider's own unit (credits, multipliers, message estimates); they aren't comparable across providers.</p></Base>

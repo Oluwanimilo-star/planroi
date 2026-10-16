@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro'; import PlanTable from '../components/PlanTable.astro';
+import { plans, CODING } from '../lib/data.js';
+---
+<Base title="Coding-agent plans"><h1>Coding-agent plans</h1>
+<p class="mut">Plans that include Codex, Claude Code, Cursor agent or Copilot agent usage. Limits are provider-defined units and are not directly comparable across providers.</p>
+<PlanTable rows={plans.filter(p=>CODING.includes(p.plan))}/></Base>

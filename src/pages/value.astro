@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro'; import v from '../data/value.json'; import { plans, verified } from '../lib/data.js';
+const srcOf = n => plans.find(p=>p.plan===n)?.source;
+const fmt = u => u===null ? null : Array.isArray(u) ? u.join('–') : u;
+const per = (u,pr) => (u===null||!pr) ? null : Array.isArray(u) ? u.map(x=>(x/pr).toFixed(2)).join('–') : (u/pr).toFixed(3);
+---
+<Base title="Value per dollar"><h1>Value per dollar</h1><p class="mut">{v.note}</p>
+<div class="card"><label>Monthly budget (USD) <input id="b" type="number" min="0" value="100" style="width:110px"></label>
+<p class="mut">Shows units your budget buys at each plan's published rate. Missing data stays "not published".</p></div>
+{v.metrics.map(m=>(<><h2>{m.provider} <small class="mut">unit: {m.unit}</small></h2><div class="tw"><table>
+<thead><tr><th>Plan</th><th>Price</th><th>Units</th><th>Units per $</th><th>For your budget</th><th>Source</th></tr></thead><tbody>
+{m.plans.map(r=>{const pp=per(r.units,r.price);return(<tr><td>{r.plan}</td><td>{r.price===null?<span class="np">not published</span>:'$'+r.price}</td>
+<td>{fmt(r.units)===null?<span class="np">not published</span>:fmt(r.units)}</td><td>{pp===null?<span class="np">not published</span>:pp}</td>
+<td class="calc" data-u={JSON.stringify(r.units)} data-p={r.price}>—</td><td><span class="src"><a href={srcOf(r.plan)} target="_blank" rel="nofollow noopener">source</a> · checked {verified}</span></td></tr>)})}
+</tbody></table></div></>))}
+<script>
+const b=document.getElementById('b');
+function run(){const B=+b.value||0;document.querySelectorAll('.calc').forEach(td=>{const u=JSON.parse(td.dataset.u||'null'),p=+td.dataset.p;
+if(u===null||!p){td.innerHTML='<span class="np">not published</span>';return}
+const f=x=>(x*B/p).toFixed(1);td.textContent=Array.isArray(u)?u.map(f).join('–'):f(u)+(B<p?' (below plan price)':'')})}
+b.addEventListener('input',run);run();
+</script></Base>

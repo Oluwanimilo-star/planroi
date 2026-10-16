@@ -1,0 +1,26 @@
+---
+const { title, desc = 'PlanROI tracks AI subscription prices, limits and changes, with value per dollar for coding-agent plans.' } = Astro.props;
+---
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title} · PlanROI</title><meta name="description" content={desc}>
+<link rel="alternate" type="application/rss+xml" title="PlanROI changes" href="/changes/rss.xml">
+<style is:global>
+:root{--bg:#fbfbfa;--fg:#1b1d21;--mut:#626a73;--ac:#0b6e4f;--bd:#e3e5e8;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#121417;--fg:#e8eaed;--mut:#9aa3ad;--ac:#4fd1a1;--bd:#2a2f36;--card:#1a1d21}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+a{color:var(--ac)}header{border-bottom:1px solid var(--bd);background:var(--card)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}nav{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;padding:12px 0}
+nav .logo{font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--fg);margin-right:auto}nav a{text-decoration:none;font-size:.95rem}
+main{padding:24px 0 48px}h1{line-height:1.2}.tw{overflow-x:auto;border:1px solid var(--bd);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{padding:10px 12px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+th{background:var(--bg);font-size:.8rem;text-transform:uppercase;letter-spacing:.03em;color:var(--mut)}.nw{white-space:nowrap}
+.src{font-size:.78rem;color:var(--mut);white-space:nowrap}.mut{color:var(--mut)}.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:16px;margin:16px 0}
+.np{color:#b45309;font-style:italic}input,select,button{font:inherit;padding:8px 10px;border:1px solid var(--bd);border-radius:6px;background:var(--card);color:var(--fg)}
+button{background:var(--ac);color:#fff;border:0;cursor:pointer}footer{border-top:1px solid var(--bd);padding:20px 0;font-size:.85rem;color:var(--mut)}
+@media(max-width:640px){th,td{padding:8px}.nw{white-space:normal}}
+</style></head><body>
+<header><div class="wrap"><nav><a class="logo" href="/">Plan<span style="color:var(--ac)">ROI</span></a>
+<a href="/coding-agents/">Coding agents</a><a href="/value/">Value/$</a><a href="/changes/">Changes</a><a href="/methodology/">Methodology</a><a href="/subscribe/">Subscribe</a></nav></div></header>
+<main class="wrap"><slot/></main>
+<footer><div class="wrap">Figures come only from official pricing pages; each links to its source and check date. Not affiliated with any provider. <a href="/sponsor/">Sponsor</a> · <a href="/changes/rss.xml">RSS</a></div></footer>
+</body></html>
