@@ -1,0 +1,25 @@
+name: Daily source check
+on:
+  schedule: [{ cron: '17 6 * * *' }]
+  workflow_dispatch:
+permissions: { contents: write, pull-requests: write }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - id: check
+        run: node scripts/check-sources.mjs --update --playwright
+      - if: steps.check.outputs.changed != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: source-check/${{ github.run_id }}
+          title: 'Source change detected (${{ github.run_id }})'
+          commit-message: 'chore: update source snapshots'
+          body-path: change-report.md
+          labels: source-change
+          add-paths: data/snapshots/
