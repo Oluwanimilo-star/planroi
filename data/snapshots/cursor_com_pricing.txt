@@ -1,41 +1,30 @@
-$0 /month
+/month
 Limited
 AI usage
 Limited agent requests
 Limited Chat requests
-$8 /month
 AI usage pool
-$30 /month
+$30
 more usage compared to Plus
 Third-party models at API list price
 *3rd party models are available in Cursor, billed separately by usage
-$100 /month
+$100
 15x
-$200 /month
-50x
-Prices shown do not include applicable taxes or fees (e.g. VAT). Third Party model usage in Cursor is not included in the monthly prices shown and must be purchased separately. View usage charges . Cancel anytime , at least 24 hours prior to renewal to avoid additional charges. Prices subject to change.
-Free $0 /month
-Plus $8 /month
-Premium $30 /month
-Super $100 /month
-Ultra $200 /month
-Teams $30 +/user/month
-Usage
-4x Plus
-15x Plus
-50x Plus
-4-50x Plus
-Usage analytics
-Group-level settings and spend limits
-We recommend Premium for new AI users, Super for daily agent users, and Ultra for power users. Plus is recommended for social creators with limited AI usage. The Teams plan is recommended for professionals collaborating with others, and larger organizations that need invoicing, pooled usage, or advanced security should choose Enterprise.
-Self-serve plans support all major credit and debit cards. For invoice-based billing and wire transfers, please contact us to discuss the Enterprise plan.
-How do usage limits work? ↓ ↑
-Every tier includes a pool of AI usage shared across Cursor and Grok. Within Grok, the pool covers Chat, Imagine, Voice, and Bot. Higher tiers include larger pools, and usage costs vary by product. Your allowance refreshes weekly, so one heavy day never wipes out your whole month.
-If you reach your included usage, you can keep going with top-offs, or wait for your allowance to refresh. You'll always see your remaining usage in settings. See our docs for more details.
-Is the Grok API included in my plan? ↓ ↑
-Paid plans include Grok API access. API usage is billed separately at standard model rates and doesn't draw from your plan's usage pool. See model pricing .
-Plus includes Grok models only. Premium and above include generous usage of Grok models but do not include an allowance for third-party models. Third-party models remain available in Cursor at API list price. You pay for exactly what you use, and you can set spending caps to manage costs.
-Are prices inclusive of taxes? ↓ ↑
-All prices are exclusive of any applicable taxes. See our Subscription Terms for more information.
-How can I see and manage Cursor's usage in my organization? ↓ ↑
-Admins can access usage information and key metrics through the Admin Dashboard .
+Prices shown do not include applicable taxes or fees (e.g. VAT). Third Party model usage in Cursor is not included in the monthly prices shown and must be purchased separately. View usage charges. Cancel anytime, at least 24 hours prior to renewal to avoid additional charges. Prices subject to change.
+$0/month
+$8/month
+$30/month
+$100/month
+$200/month
+$30+/user/month
+Usage Limited Basic 4x Plus 15x Plus 50x Plus 4-50x Plus Pooled
+Third-party models at API list price — — ✓ ✓ ✓ ✓ ✓
+Chat Limited ✓ ✓ ✓ ✓ ✓ ✓
+Image generation (Imagine) Limited ✓ ✓ ✓ ✓ ✓ ✓
+Grok Build Limited ✓ ✓ ✓ ✓ ✓ ✓
+Usage analytics — — — — — ✓ ✓
+Group-level settings and spend limits — — — — — — ✓
+How do usage limits work?
+Is the Grok API included in my plan?
+Are prices inclusive of taxes?
+How can I see and manage Cursor's usage in my organization?
