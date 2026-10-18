@@ -28,14 +28,14 @@ const plans = plansDoc.plans;
 const SOURCES = {
   'https://chatgpt.com/pricing': {
     // The page HTML (context windows, limits) loads in a real browser, but the prices are filled in
-    // client-side from a bot-protected pricing endpoint that answers 403 after a few automated requests,
-    // and the whole page answers 403 to GitHub Actions runners. So prices on this page are never part of
+    // client-side from a bot-protected pricing endpoint that answers 403 after a few automated requests
+    // (and from GitHub Actions runners); plain fetch of the page gets 403 in CI. So prices on this page are never part of
     // the compared facts; they are verified against the official fallback pages below instead.
     mode: 'playwright',
     waitFor: () => [...document.querySelectorAll('span.tabular-nums')].some(s => /\d/.test(s.textContent)),
     waitOptional: true,
     volatilePrices: true,
-    knownBlocked: 'page answers HTTP 403 to GitHub Actions runners; prices load from a bot-protected endpoint',
+    knownBlocked: 'plain fetch gets HTTP 403; in Playwright the page loads but prices come from a bot-protected endpoint that answers 403',
     // Official pages that state the same plan prices (verified 2026-10-18):
     // Codex pricing lists Free $0 / Go $8 / Plus $20 / Pro $100-$200-$500; the Pro tiers help article lists $100/$200/$500.
     fallback: ['https://developers.openai.com/codex/pricing', 'https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers'],
