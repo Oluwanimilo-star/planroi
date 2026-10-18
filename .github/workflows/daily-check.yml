@@ -3,6 +3,7 @@ on:
   schedule: [{ cron: '17 6 * * *' }]
   workflow_dispatch:
 permissions: { contents: write, pull-requests: write }
+concurrency: { group: source-check, cancel-in-progress: false }
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -12,14 +13,19 @@ jobs:
         with: { node-version: 20, cache: npm }
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      # Compares extracted price/limit facts with data/snapshots/*.json.
+      # Fetch errors are warnings only; `changed` counts sources whose facts changed.
       - id: check
         run: node scripts/check-sources.mjs --update --playwright
+      - run: cat change-report.md >> "$GITHUB_STEP_SUMMARY"
+      # One rolling PR: a fixed branch means an already-open source-check PR is updated
+      # (force-pushed, title/body refreshed) instead of a new PR being opened each day.
       - if: steps.check.outputs.changed != '0'
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: source-check/${{ github.run_id }}
-          title: 'Source change detected (${{ github.run_id }})'
-          commit-message: 'chore: update source snapshots'
+          branch: source-check/latest
+          title: 'Source check: pricing/limit facts changed'
+          commit-message: 'chore: update source fact snapshots'
           body-path: change-report.md
           labels: source-change
           add-paths: data/snapshots/

@@ -1,0 +1,15 @@
+{
+ "url": "https://cursor.com/pricing",
+ "mode": "fetch",
+ "facts": [
+  "multiplier 15x",
+  "multiplier 4x",
+  "multiplier 50x",
+  "price $0/month",
+  "price $100/month",
+  "price $200/month",
+  "price $30/month",
+  "price $30/user/month",
+  "price $8/month"
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "url": "https://chatgpt.com/pricing",
+ "mode": "playwright",
+ "facts": [
+  "context 128K",
+  "context 256K",
+  "context 27K",
+  "context 400K",
+  "context 54K"
+ ]
+}

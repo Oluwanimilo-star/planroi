@@ -1,0 +1,19 @@
+{
+ "url": "https://github.com/features/copilot/plans",
+ "mode": "playwright",
+ "facts": [
+  "price $0",
+  "price $10/month",
+  "price $10/user/month",
+  "price $100/month",
+  "price $100/user/month",
+  "price $15/month",
+  "price $200/month",
+  "price $31/month",
+  "price $39/month",
+  "price $39/user/month",
+  "price $5/month",
+  "price $70/month",
+  "quantity 2000 completion"
+ ]
+}

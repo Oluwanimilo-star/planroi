@@ -1,0 +1,28 @@
+{
+ "url": "https://claude.com/pricing",
+ "mode": "fetch",
+ "facts": [
+  "context 100K",
+  "context 1M",
+  "limit [Free, Pro] 5-hour 5x",
+  "limit [Max, Pro] 20x 5-hour 5x",
+  "limit [Pro] 20x 5-hour 5x",
+  "multiplier 1.1x",
+  "multiplier 2.5x",
+  "multiplier 20x",
+  "multiplier 2x",
+  "multiplier 5x",
+  "price $0",
+  "price $100/month",
+  "price $100/seat/month",
+  "price $125/month",
+  "price $17/month",
+  "price $20/month",
+  "price $20/seat/month",
+  "price $200/month",
+  "price $25/month",
+  "price $500/month",
+  "price US$20/seat/month",
+  "quantity 20 seat"
+ ]
+}

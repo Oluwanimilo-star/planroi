@@ -1,0 +1,26 @@
+{
+ "url": "https://gemini.google/subscriptions/",
+ "mode": "fetch",
+ "facts": [
+  "context 1M",
+  "limit [Pro] 20x",
+  "limit [Ultra] 20x",
+  "limit [Ultra] 5x",
+  "multiplier 20x",
+  "multiplier 2x",
+  "multiplier 4x",
+  "multiplier 5x",
+  "price $0/month",
+  "price $19.99/month",
+  "price $199.99/month",
+  "price $21/seat/month",
+  "price $30/seat/month",
+  "price $4.99/month",
+  "price $99.99/month",
+  "quantity 15 GB",
+  "quantity 20 TB",
+  "quantity 300 seat",
+  "quantity 400 GB",
+  "quantity 5 TB"
+ ]
+}
