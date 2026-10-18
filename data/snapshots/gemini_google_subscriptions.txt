@@ -1,20 +1,20 @@
-$0 / month with a Google Account
+$0/ month with a Google Account
 Access to our AI creative studio to create cinematic scenes and stories, including limited access to Nano Banana Pro.
-$4.99 / month
+$4.99/ month
 Get 2x higher usage access than Free
-Get 2x higher usage limits 2 than Free and access to more features like video generation and Daily Brief.
+Get 2x higher usage limits2 than Free and access to more features like video generation and Daily Brief.
 Get 200 Google Flow Credits to use across our AI creative studio to create cinematic scenes and stories with access to Gemini Omni Flash and custom tool creation.
-$19.99 / month
+$19.99/ month
 Get 4x higher usage access than Free
-Get 4x higher usage limits 2 than Free and access to more features like video generation and Daily Brief.
+Get 4x higher usage limits2 than Free and access to more features like video generation and Daily Brief.
 Get 1,000 Google Flow Credits to use across our AI creative studio to create cinematic scenes and stories with access to Gemini Omni Flash and custom tool creation.
 Higher limits to our asynchronous coding agent for software developers
 Entry rate limits to agent model in Google Antigravity, our agentic development platform
 Research and writing assistant with 5x more Audio Overviews, notebooks, and more
-$99.99 / month
-$99.99 / month: 5x higher usage limits vs. AI Pro
+$99.99/ month
+$99.99/ month: 5x higher usage limits vs. AI Pro
 $199.99 / month: 20x higher usage limits vs. AI Pro
-Get up to 20x higher usage limits 2 in Gemini than the Pro plan, plus first access to advanced features like Tasks in Gemini (in select countries ).
+Get up to 20x higher usage limits2 in Gemini than the Pro plan, plus first access to advanced features like Tasks in Gemini (in select countries).
 Get 10,000 or 25,000 Google Flow Credits to use across our AI creative studio to create cinematic scenes and stories with access to Gemini Omni Flash and custom tool creation.
 Highest limits to our asynchronous coding agent for software developers
 Ultra 5x: Higher rate limits to agent model in Google Antigravity, our agentic development platform
@@ -22,23 +22,8 @@ Ultra 20x: Highest rate limits to agent model in Google Antigravity, our agentic
 Highest limits and best model capabilities
 Highest limits to Gemini directly in Google apps
 Unlock higher usage limits and premium features with Gemini Notebook to help you surface critical insights faster from the information you provide.
-Get more access to our most capable models, like 3.1 Pro, and powerful features, like Deep Research and a 1M token context window. Also, unlock a limited trial of Veo 3.1 Lite, our video generation model that prioritizes speed and efficiency.
-$21 USD per seat per month
-$30 USD per seat per month
-Higher usage limits for Gemini
-Unlimited seats
-Gemini Enterprise refers to the editions of Gemini that are built for business use. These editions work across your business apps, email, docs, code, and data to generate content, produce insights, and automate workflows grounded in your business context.
-Standard and Plus editions : Designed for organizations that need stricter security and compliance requirements. Includes higher quota, unlimited seats, and access to third-party agents.
-Limited access to certain models
-Input & output tokens at no cost
-Upgrade to paid plan for higher rate limits and access to Context caching, Batch API, and Google’s most advanced models
-Unlimited Tab completions
-Unlimited Command requests
-Basic weekly rate limits
-Upgrade to paid plan for higher rate limits and flexible AI credit pool
-Pay by usage
-Cancel anytime. No refunds for partial billing periods, except as required by applicable law. By subscribing, you agree to terms for Google One , Google , and offers . See how Google handles data . Google AI plans and Gemini for Gmail, Docs, and more are only available for ages 18+. Gemini for Gmail, Docs and more is available in select languages . Rate limits may apply .
-2. Usage access limits in the Gemini app: For the Gemini app, compute-based usage limits factor in the complexity of your prompt, the features you use, and the length of your chat. Your limit refreshes every 5 hours until you reach your weekly limit. You can extend your limits by purchasing AI credits. To learn more about usage access and how to use AI credits, please visit our Help Center .
-7. The YouTube Premium Lite plan included in this bundle won’t activate if you already have an equivalent or YouTube Premium subscription. Learn more . Already have a YouTube membership? Learn more about managing memberships .
-9. Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.
+Cancel anytime. No refunds for partial billing periods, except as required by applicable law. By subscribing, you agree to terms for Google One, Google, and offers. See how Google handles data. Google AI plans and Gemini for Gmail, Docs, and more are only available for ages 18+. Gemini for Gmail, Docs and more is available in select languages. Rate limits may apply.
+Usage access limits in the Gemini app: For the Gemini app, compute-based usage limits factor in the complexity of your prompt, the features you use, and the length of your chat. Your limit refreshes every 5 hours until you reach your weekly limit. You can extend your limits by purchasing AI credits. To learn more about usage access and how to use AI credits, please visit our Help Center.
+The YouTube Premium Lite plan included in this bundle won’t activate if you already have an equivalent or YouTube Premium subscription. Learn more. Already have a YouTube membership? Learn more about managing memberships.
+Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.
 Long Context

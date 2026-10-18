@@ -1,160 +1,95 @@
-Counting tokens
-Sessions Run and continue sessions
-Manage sessions
-Observability and usage
-Managing sessions
-Rate limits and spend
-Rate limits
-Spend limits
-Request a client ID
-ChatGPT plan usage
-Accounts and sessions
-Token reference
-Preview limitations
-Hotel Feeds (limited beta)
-Authenticate with Workspace Agent access tokens
-Personal access tokens
-Usage and cost
-Usage and analytics
-Usage Insights
 ChatGPT Work and Codex are included in your ChatGPT Free, Go, Plus, Pro, Business, Edu, or Enterprise plan
-ChatGPT Work and Codex share usage. ChatGPT Work usage inside
-ChatGPT uses the same pricing, credits, and usage limits as Codex.
-PDT (19:00 UTC). The OpenAI API and Codex sessions authenticated with an API
-See token rates for credit-based plans and
-API token prices are separate from subscription usage; don’t use them to
-estimate included tasks.
-$0 /month
-$8 /month
+ChatGPT Work and Codex share usage. ChatGPT Work usage inside ChatGPT uses the same pricing, credits, and usage limits as Codex.
+GPT-5.5 retires from Codex with ChatGPT sign-in on October 14, 2026, at noon PDT (19:00 UTC). The OpenAI API and Codex sessions authenticated with an API key aren’t affected. See GPT-5.5 retirement for migration guidance.
+See token rates for credit-based plans and GPT-6.1 Sol model guidance for model details. API token prices are separate from subscription usage; don’t use them to estimate included tasks.
+/month
 Power a few focused coding sessions each week.
-$20 /month
+$20
 Flexibly extend usage with ChatGPT credits
 Choose the Pro plan that fits your usage.
-From $100 /month
+$100
 Plans at $100, $200, or $500 USD per month
-access on Pro $500
+Ultrafast mode access on Pro $500
 Compare Pro plans and usage limits.
 Pay for Codex usage based on API pricing
-$20 / user / month*
-*2+ users, billed annually. $25 per user per month when billed monthly.
-Priority request processing
-Audit logs and usage monitoring via the Compliance
-limits, and when rewards expire for your plan or promotion. Personal and
-Business referrals use separate shared-workspace credit rewards; review the
+The invitation dialog shows the current reward, recipient requirements, invite limits, and when rewards expire for your plan or promotion. Personal and Business referral programs have separate rewards and eligibility rules. Referrals aren’t currently available for ChatGPT Enterprise.
+Business referrals use separate shared-workspace credit rewards; review the current terms before you send an invitation.
 What are the usage limits for my plan?
-The number of messages you can send depends on the model used, size and
-allowance, while larger projects, long-running tasks, or extended sessions that
-require the agent to hold more context will use significantly more per message.
-choice, context, reasoning, tool use, retrieval, and caching all affect usage,
-The estimates below show local messages per five-hour period for Plus and
-Standard Business. Pro plans currently have no five-hour limit. Cloud tasks
-may use more of your allowance than local messages. Usage depends on the model
-and task. These estimates are not fixed message limits; check your
-usage dashboard for current limits
-Local messages and cloud chats share your plan’s usage allowance. Weekly
-limits may also apply.
-Enterprise/Edu users with flexible pricing have no fixed rate limits.
-Usage scales with credits .
-usage limits as Plus for most features.
-Usage limits are shared with other agentic features once pricing for those
-Fast and Ultrafast modes use included subscription limits and paid credits
-Included subscription usage
-Purchased credits and Enterprise pay-as-you-go usage
-2.5x
-Check your usage dashboard for
-current limits and reset times. See Speed
-for supported models and how speed modes affect usage.
-Image generations use included limits ~3-5x faster on average, depending on
-Sites is included with eligible ChatGPT plans during public
-Voice in Desktop uses your existing Codex usage budget at $0.05 per
-separately at its applicable token rates. Voice and tasks share your plan’s usage
-limits.
-For Business, Edu, and Enterprise workspaces with credit-based billing, desktop
-voice costs 1.25 credits per minute. This rate also applies when Plus and Pro
-users spend additional credits. ChatGPT Voice in Desktop isn’t available via API
+The number of messages you can send depends on the model used, size and complexity of your tasks, and whether you run them locally or in the cloud. Small scripts or routine functions may consume only a fraction of your allowance, while larger projects, long-running tasks, or extended sessions that require the agent to hold more context will use significantly more per message.
+Tasks that look similar can consume different amounts of your allowance. Model choice, context, reasoning, tool use, retrieval, and caching all affect usage, so prompt length alone isn’t a reliable estimate.
+The estimates below show local messages per five-hour period for Plus and Standard Business. Pro plans currently have no five-hour limit. Cloud tasks may use more of your allowance than local messages. Usage depends on the model and task. These estimates are not fixed message limits; check your usage dashboard for current limits and reset times.
+Local messages and cloud chats share your plan’s usage allowance. Weekly limits may also apply.
+Enterprise/Edu users with flexible pricing have no fixed rate limits. Usage scales with credits.
+Enterprise and Edu plans without flexible pricing have the same per-seat usage limits as Plus for most features.
+Usage limits are shared with other agentic features once pricing for those features is effective. This currently includes ChatGPT for Excel on Plus and Pro.
+Fast and Ultrafast modes use included subscription limits and paid credits at different rates, relative to Standard mode for the same model:
+Speed mode Included subscription usage Purchased credits and Enterprise pay-as-you-go usage
+Fast 2.5x 2x
+GPT-6 Astra Ultrafast 8x 6x
+GPT-6.1 Sol Ultrafast 8x 6x
+Check your usage dashboard for current limits and reset times. See Speed for supported models and how speed modes affect usage.
+Image generations use included limits ~3-5x faster on average, depending on image quality and size.
+Sites is included with eligible ChatGPT plans during public beta. Availability depends on your plan, region, and workspace settings.
+Voice in Desktop uses your existing Codex usage budget at $0.05 per minute.
+GPT-Live manages the live conversation. The model handling your task is billed separately at its applicable token rates. Voice and tasks share your plan’s usage limits.
+For Business, Edu, and Enterprise workspaces with credit-based billing, desktop voice costs 1.25 credits per minute. This rate also applies when Plus and Pro users spend additional credits. ChatGPT Voice in Desktop isn’t available via API key.
 What happens when you hit usage limits?
-usage limits during an active turn, the agent will be able to continue working
-on that turn, subject to fair use limits.
-ChatGPT Plus and Pro users who reach their usage limit can purchase additional
-credits to continue working without needing to upgrade their existing plan.
-can purchase additional workspace credits to continue working.
-All users may also run extra local chats using an API key, with usage charged at
+We want you to be able to complete work already in progress. If you reach your usage limits during an active turn, the agent will be able to continue working on that turn, subject to fair use limits.
+ChatGPT Plus and Pro users who reach their usage limit can purchase additional credits to continue working without needing to upgrade their existing plan.
+Business, Edu, and Enterprise plans with flexible pricing can purchase additional workspace credits to continue working.
+All users may also run extra local chats using an API key, with usage charged at standard API rates.
 How does image generation count toward usage limits?
-Image generation counts toward the same general usage limits as local
-messages and cloud chats. Image generations use included limits 3-5x faster on
-image quality and size. After you reach your included limits, image generation
-also draws from credits .
-API key, API pricing applies to image generation instead of included ChatGPT
-usage limits.
+Image generation counts toward the same general usage limits as local messages and cloud chats. Image generations use included limits 3-5x faster on average than similar turns without image generation, depending on image quality and size. After you reach your included limits, image generation also draws from credits.
+Image generation isn’t available on the Free plan. When you use Codex with an API key, API pricing applies to image generation instead of included ChatGPT usage limits.
 Where can I see my current usage limits?
-You can find your current limits in the usage
-remaining limits during an active Codex CLI session, you can use /status .
-capacity. If usage is higher than expected, consider whether a smaller model or
+You can find your current limits in the usage dashboard. If you want to see your remaining limits during an active Codex CLI session, you can use /status.
+Check the dashboard every week or two to understand your pace and remaining capacity. If usage is higher than expected, consider whether a smaller model or tighter task scope would still produce a useful result.
 What are tokens and credits?
-Tokens are small units of information that ChatGPT reads and writes. Your
-use tokens.
-Credits are the unit used to pay for eligible usage on credit-based plans.
-After you reach your included limits, available credits let you continue
-working. Credit purchase prices and applicable discounts depend on your plan
+Tokens are small units of information that ChatGPT reads and writes. Your prompt, files, chat history, tool results, and ChatGPT’s response all use tokens.
+Credits are the unit used to pay for eligible usage on credit-based plans. After you reach your included limits, available credits let you continue working. Credit purchase prices and applicable discounts depend on your plan or agreement.
 Token rates
-The rates below are for Standard speed, quoted in credits per million input
-tokens, cached input tokens, and output tokens. Learn more about
-tokens .
-Codex credit billing has no separate cache-write charge. API-key usage follows
-GPT-5.6 Sol, Terra, and Luna rates remain unchanged. Credit prices alone don’t determine
-included subscription usage; check your
-usage dashboard for current limits.
-card until we migrate you to the new token-based pricing. For more information,
+The rates below are for Standard speed, quoted in credits per million input tokens, cached input tokens, and output tokens. Learn more about tokens.
+Codex credit billing has no separate cache-write charge. API-key usage follows API pricing.
+GPT-5.6 Sol, Terra, and Luna rates remain unchanged. Credit prices alone don’t determine included subscription usage; check your usage dashboard for current limits.
+A small subset of Enterprise customers should continue using the legacy rate card until we migrate you to the new token-based pricing. For more information, contact OpenAI sales.
 Credits per 1M tokens
 Input Tokens
 Cached input tokens
 Output Tokens
-250 credits
-25 credits
-1,250 credits
-50 credits
-2.5 credits
-5 credits
-0.25 credits
-12.5 credits
-100 credits
-10 credits
-500 credits
-312.5 credits
-31.25 credits
-1875 credits
-300 credits
-0.5 credits
-30 credits
-125 credits
-625 credits
-200 credits
-750 credits
+GPT-6 Astra 250 credits 25 credits 1,250 credits
+GPT-6.1 Sol 50 credits 2.5 credits 250 credits
+GPT-6 Sol 50 credits 5 credits 250 credits
+GPT-6 Luna 2.5 credits 0.25 credits 12.5 credits
+GPT-5.6 Sol 100 credits 10 credits 500 credits
+Daybreak Blue 100 credits 10 credits 500 credits
+Daybreak Red 312.5 credits 31.25 credits 1875 credits
+GPT-5.6 Terra 50 credits 5 credits 300 credits
+GPT-5.6 Luna 5 credits 0.5 credits 30 credits
+GPT-Rosalind-Research 125 credits 12.5 credits 625 credits
+GPT-Image-2 (image) 200 credits 50 credits 750 credits
+GPT-Image-2 (text) 125 credits 31.25 credits 250 credits
 A typical GPT-5.6 Sol task may use 2-15 credits.
-These are Standard credit rates. For purchased credits and Enterprise
-pay-as-you-go usage, Fast mode uses 2x the Standard rate where
-available, and Ultrafast mode uses 6x. Included subscription usage has
-Daybreak Blue uses GPT-5.6 Sol credit rates. Daybreak Red requires
-Learn more about credits in ChatGPT Plus and
-Learn more about credits in ChatGPT Business, Enterprise, and
-For Business and Enterprise/Edu credit billing, use the credit-based rate card . If your Enterprise agreement specifies usage-based billing in USD, use the Enterprise USD rate card and your agreement instead. Workspace administrators can also review ChatGPT Work usage and cost .
+These are Standard credit rates. For purchased credits and Enterprise pay-as-you-go usage, Fast mode uses 2x the Standard rate where available, and Ultrafast mode uses 6x. Included subscription usage has different multipliers. See Speed for availability and billing details.
+Daybreak access requires Trusted Access for Cyber approval. Daybreak Blue uses GPT-5.6 Sol credit rates. Daybreak Red requires separate approval and provisioning.
+Learn more about credits in ChatGPT Plus and Pro.
+Learn more about credits in ChatGPT Business, Enterprise, and Edu.
+For Business and Enterprise/Edu credit billing, use the credit-based rate card. If your Enterprise agreement specifies usage-based billing in USD, use the Enterprise USD rate card and your agreement instead. Workspace administrators can also review ChatGPT Work usage and cost.
 What counts as Code Review usage?
-Code Review usage applies only when Codex runs reviews through GitHub, for
-example, when you tag @Codex for review in a pull request or enable automatic
-toward your general usage limits.
+Code Review usage applies only when Codex runs reviews through GitHub, for example, when you tag @Codex for review in a pull request or enable automatic reviews on your repository. Reviews run locally or outside of GitHub count toward your general usage limits.
 What can I do to make my usage limits last longer?
-The local-message counts above are estimates; the token table lists credit
-rates per million tokens. To make your usage allowance last longer, try these
-give the agent, but remove unnecessary context.
-Limit source material. Provide only relevant files and, when possible,
-can control how much context you inject through AGENTS.md files by nesting
-Limit the number of MCP servers you use. Every
-MCP server adds more context to your messages and uses
-more of your limit. Disable MCP servers when you don’t need them.
-Codex access tokens for trusted automation
-Ultrafast (Pro $500 and eligible Enterprise/Edu plans)
-Limited*
+The local-message counts above are estimates; the token table lists credit rates per million tokens. To make your usage allowance last longer, try these tips:
+Control the size of your prompts. Be precise with the instructions you give the agent, but remove unnecessary context.
+Limit source material. Provide only relevant files and, when possible, narrow the sources or date range.
+Reduce the size of your AGENTS.md. If you work on a larger project, you can control how much context you inject through AGENTS.md files by nesting them within your repository.
+Limit the number of MCP servers you use. Every MCP server adds more context to your messages and uses more of your limit. Disable MCP servers when you don’t need them.
+Codex access tokens for trusted automation — —
+Ultrafast (Pro $500 and eligible Enterprise/Edu plans) —
+Composer predictions (beta) — Limited* — — —
 Auto-review for approval requests
+Computer Use in the browser Limited* Limited* Limited* Limited* Limited*
+Use ChatGPT with Chrome Limited* Limited* Limited* Limited* Limited*
+Computer Use Limited* Limited* Limited* Limited* Limited*
+Record & Replay (macOS) Limited* Limited* Limited* Limited* Limited*
 Limited†
-Automation access tokens
-* Feature is currently limited to only specific regions. Check the
+Memories Limited* Limited* Limited* Limited* Limited*
+* Feature is currently limited to only specific regions. Check the individual feature documentation to learn more about geographic restrictions.
