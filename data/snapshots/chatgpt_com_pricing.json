@@ -6,6 +6,7 @@
   "context 256K",
   "context 27K",
   "context 400K",
-  "context 54K"
+  "context 54K",
+  "multiplier 2x"
  ]
 }
